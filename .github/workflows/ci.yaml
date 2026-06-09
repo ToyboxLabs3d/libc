@@ -280,7 +280,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Test on FreeBSD
-        uses: vmactions/freebsd-vm@v1.4.5
+        uses: vmactions/freebsd-vm@v1.4.6
         if: contains(matrix.target, 'freebsd')
         with:
           release: ${{ matrix.release }}
